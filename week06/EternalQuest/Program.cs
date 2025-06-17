@@ -1,6 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
-
+// Sorry I forgive write what I implemented, depending of how many points you have, you will have a range or title
+// this ranges are vased in the knights, there are 5 ranks that you can earn, this was for add anoter level of gamification.  
 class Program
 {
     static void Main(string[] args)
@@ -77,7 +78,7 @@ class Program
                         }
 
                         else if (information[0] == "EternalGoal")
-                        { 
+                        {
                             Goal goal2 = new Goal(information[1], information[2], int.Parse(information[3]));
                             string eternal = "False";
                             goal2.GetRepresentationString(num, eternal);
@@ -190,7 +191,7 @@ class Program
                         int newScore = previusScore + scoreEarned;
                         Console.WriteLine($"You now have {newScore} points");
                         goals[0] = newScore.ToString();
-                        string goalFulfite = succede.GetCompliteString(information[0], information[1], information[2], information[3], information[4], information[5], times.ToString());                       
+                        string goalFulfite = succede.GetCompliteString(information[0], information[1], information[2], information[3], information[4], information[5], times.ToString());
                         goals[end] = goalFulfite;
                     }
                 }
