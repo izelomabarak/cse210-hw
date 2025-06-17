@@ -35,6 +35,7 @@ class Program
                 Swimming swimming = new Swimming(activityData[0], activityData[1], double.Parse(activityData[2]), double.Parse(activityData[3]));
                 Console.WriteLine(swimming.GetSummary());
             }
+            Console.WriteLine("");
         }
     }
 }
